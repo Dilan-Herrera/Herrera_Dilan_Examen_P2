@@ -427,7 +427,7 @@
     <Style x:Key="CuadrosInferiores" TargetType="Label">
         <Setter Property="HorizontalOptions" Value="Center" />
         <Setter Property="VerticalOptions" Value="Center" />
-        <Setter Property="TextColor" Value="DarkGreen" />
+        <Setter Property="TextColor" Value="Red" />
         <Setter Property="FontSize" Value="Medium" />
     </Style>
 

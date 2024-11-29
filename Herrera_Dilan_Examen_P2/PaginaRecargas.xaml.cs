@@ -22,7 +22,7 @@ public partial class PaginaRecargas : ContentPage
 
         if (string.IsNullOrWhiteSpace(nombre) || string.IsNullOrWhiteSpace(numero))
         {
-            DisplayAlert("Error", "Por favor complete ambos campos.", "OK");
+            DisplayAlert("Error", "Por favor complete ambos campos", "OK");
             return;
         }
 
@@ -36,12 +36,12 @@ public partial class PaginaRecargas : ContentPage
 
         if (guardado)
         {
-            DisplayAlert("Éxito", "Recarga realizada correctamente.", "OK");
+            DisplayAlert("Éxito", "Recarga realizada correctamente", "OK");
             UltimaRecargaLabel.Text = _repository.ObtenerUltimaRecargaFormateada();
         }
         else
         {
-            DisplayAlert("Error", "No se pudo realizar la recarga.", "OK");
+            DisplayAlert("Error", "No se pudo realizar la recarga", "OK");
         }
     }
 }

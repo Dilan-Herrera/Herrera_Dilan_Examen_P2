@@ -60,7 +60,7 @@ namespace Herrera_Dilan_Examen_P2.Repositories
             {
                 return $"Nombre: {ultimaRecarga.Nombre}\nNúmero: {ultimaRecarga.Numero}";
             }
-            return "No hay recargas registradas.";
+            return "No hay recargas registradas";
         }
     }
 }
