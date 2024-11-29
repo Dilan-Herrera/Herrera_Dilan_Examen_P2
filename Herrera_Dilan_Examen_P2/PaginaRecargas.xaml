@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Herrera_Dilan_Examen_P2.PaginaRecargas"
+             Title="PaginaRecargas">
+
+    <StackLayout Padding="20" Spacing="15">
+        <Label 
+            Text="Ingrese el numero de telefono"
+            FontSize="15"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"/>
+
+        <Entry Placeholder="Numero" 
+               Keyboard="Numeric" 
+               FontSize="Medium" 
+               Margin="0,0,0,20" />
+
+        <Label
+            Text="Ingrese el nombre de quien realiza la recarga"
+            FontSize="15"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"/>
+
+        <Entry Placeholder="Nombre" 
+               Keyboard="Text"
+               FontSize="Medium" 
+               Margin="0,0,0,20" />
+
+        <Button Text="Recargar" 
+                FontSize="Medium" 
+                Clicked="OnAgregarClicked" />
+    </StackLayout>
+    
+</ContentPage>

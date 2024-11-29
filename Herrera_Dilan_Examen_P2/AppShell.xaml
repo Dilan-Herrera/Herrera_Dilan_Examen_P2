@@ -4,12 +4,29 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Herrera_Dilan_Examen_P2"
-    Shell.FlyoutBehavior="Disabled"
     Title="Herrera_Dilan_Examen_P2">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+        <Tab Title="MainPage" Icon="dotnet_bot.png">
+            <ShellContent
+            Title="MainPage"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+        </Tab>
+
+        <Tab Title="PaginaRecargas" Icon="dotnet_bot.png">
+            <ShellContent
+            Title="PaginaRecargas"
+            ContentTemplate="{DataTemplate local:PaginaRecargas}"
+            Route="PaginaRecargas" />
+        </Tab>
+
+        <Tab Title="PaginaNombres" Icon="dotnet_bot.png">
+            <ShellContent
+            Title="PaginaNombres"
+            ContentTemplate="{DataTemplate local:PaginaNombres}"
+            Route="PaginaNombres" />
+        </Tab>
+    </TabBar>
 
 </Shell>
