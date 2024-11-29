@@ -428,7 +428,6 @@
         <Setter Property="HorizontalOptions" Value="Center" />
         <Setter Property="VerticalOptions" Value="Center" />
         <Setter Property="TextColor" Value="DarkGreen" />
-        <Setter Property="FontAttributes" Value="Bold" />
         <Setter Property="FontSize" Value="Medium" />
     </Style>
 
