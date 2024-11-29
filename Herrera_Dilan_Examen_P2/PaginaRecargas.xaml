@@ -5,34 +5,43 @@
              Title="PaginaRecargas">
 
     <StackLayout Padding="20" Spacing="15">
-        <Label 
-            Text="Ingrese el numero de telefono"
-            FontSize="15"
-            HorizontalOptions="Center"
-            VerticalOptions="Center"/>
 
-        <Entry Placeholder="Numero" 
-               Text="{Binding Numero}"
+        <Label 
+               Text="Ingrese el número de teléfono"
+               FontSize="15"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+
+        <Entry x:Name="NumeroEntry"
+               Placeholder="Número" 
                Keyboard="Numeric" 
                FontSize="Medium" 
                Margin="0,0,0,20" />
 
-        <Label
-            Text="Ingrese el nombre de quien realiza la recarga"
-            FontSize="15"
-            HorizontalOptions="Center"
-            VerticalOptions="Center"/>
+        <Label Text="Ingrese el nombre de quien realiza la recarga"
+               FontSize="15"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
 
-        <Entry Placeholder="Nombre" 
-               Text="{Binding Nombre}"
+        <Entry x:Name="NombreEntry"
+               Placeholder="Nombre" 
                Keyboard="Text"
                FontSize="Medium" 
                Margin="0,0,0,20" />
 
+        <Label Text="Ultima Recarga Realizada:" 
+               FontSize="15" 
+               FontAttributes="Bold" 
+               IsVisible="{Binding TieneUltimaRecarga}" />
+
+        <Label x:Name="UltimaRecargaLabel"
+               FontSize="13"
+               HorizontalOptions="Start" />
+
+
         <Button Text="Recargar" 
-                
                 FontSize="Medium" 
                 Clicked="OnAgregarClicked" />
     </StackLayout>
-    
+
 </ContentPage>
