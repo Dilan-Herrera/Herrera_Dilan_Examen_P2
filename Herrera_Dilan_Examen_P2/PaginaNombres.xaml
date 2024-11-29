@@ -3,10 +3,39 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Herrera_Dilan_Examen_P2.PaginaNombres"
              Title="PaginaNombres">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition />
+            <RowDefinition Height="100" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Label Text="Dilan" 
+               HorizontalOptions="Center" 
+               VerticalOptions="Center"/>
+
+        <Label Text="Jair" 
+               Grid.Column="1" 
+               HorizontalOptions="Center" 
+               VerticalOptions="Center"/>
+
+        <Label Text="Herrera" 
+               Style="{StaticResource CuadrosInferiores}"
+               Grid.Row="1"
+               HorizontalOptions="Center" 
+               VerticalOptions="Center"/>
+
+        <Label Text="Felicita" 
+               Style="{StaticResource  CuadrosInferiores}"
+               Grid.Row="1" Grid.Column="1"
+               HorizontalOptions="Center" 
+               VerticalOptions="Center"/>
+    </Grid>
+
+
 </ContentPage>
